@@ -20,7 +20,7 @@ textarea {
 }
 
 .center h1 {
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 /* typography */
@@ -33,11 +33,12 @@ h1 {
   font-size: 3em;
   letter-spacing: -2px;
   margin-bottom: 30px;
-  text-align: center;
+	text-align: center;
+	
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 2.5em;
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
@@ -46,6 +47,31 @@ h2 {
 }
 
 p {
-  font-size: 1.1em;
+  font-size: 2em;
   line-height: 1.7em;
 }
+
+/* background */
+
+.bg_test-text {
+	border:  solid 1px;                             /* 枠線指定 */
+	display:  inline-block;                         /* インラインブロックにする */
+	padding: 10px 20px;                             /* 余白指定 */
+	background-color: rgba(255, 255, 255, 0.7);     /* 背景色指定 */
+}
+.bg_test {
+	text-align:  center;    /* 文字中央寄せ */
+	padding:  150px;        /* 余白指定 */
+	border: solid 2px;      /* 枠線指定 */
+}
+.bg_test {
+	background-image: url(b080.jpg);    /* 背景画像指定 */
+}
+
+.jumbotron {
+	padding-top: 50px;
+	background: url(b080.jpg);
+	background-size: cover;
+	background-position: 100% 100%;
+}
+
