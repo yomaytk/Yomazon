@@ -42,4 +42,15 @@ class UserTest < ActiveSupport::TestCase
 		@user2.email = @user2.email.upcase
 		assert_not @user2.valid?
 	end
+
+	test "password should be right" do
+		assert @user.valid?
+		@user.password = " " * 6
+		assert_not @user.valid?
+		@user.password = "foo"
+		assert_not @user.valid?
+		@user.password_confirmation = " " * 6
+		assert_not @user.valid?
+	end
+
 end
