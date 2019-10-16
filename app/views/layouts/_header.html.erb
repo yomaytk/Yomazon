@@ -5,8 +5,11 @@
 		
 	<nav>
 		<ul class="nav navbar-nav navbar-right">
-				<li><%= link_to "ログイン", '#', method: :post %></li>
-		<li><%= link_to "ログアウト", '#' %></li>
+			<% if !logged_in? %>
+				<li><%= link_to "ログイン", '/login', method: :get %></li>
+			<% else %>
+				<li><%= link_to "ログアウト", '/logout', method: :delete %></li>
+			<% end %>
 		</ul>
 	</nav>
 	</div>
